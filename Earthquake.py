@@ -145,6 +145,6 @@ class Earthquake:
 
         ret_eqt_list = []
         for eqt in eqt_list:
-            if eqt.within_time_range(jingweiLimit, self):
+            if eqt.within_jingwei_range(jingweiLimit, self):
                 ret_eqt_list.append(eqt.json_eqrthquake())
         return ret_eqt_list
