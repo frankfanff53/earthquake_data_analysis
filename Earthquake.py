@@ -56,6 +56,7 @@ class Earthquake:
         self.level = float(data[6])
         self.depth = float(data[7])
         if len(data) == 8:
+            #如果没有新的地点，就把它设定为null
             self.position = "null"
         else:
             self.position = data[8]
